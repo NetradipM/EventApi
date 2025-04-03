@@ -1,10 +1,16 @@
-# Installing Ansible on Ubuntu
-### Ubuntu builds are available in a PPA here.
-
-### To configure the PPA on your system and install Ansible run these commands:
+# Create a new directory for your project:
 ```
-sudo apt update 
-sudo apt install software-properties-common -y
-sudo add-apt-repository --yes --update ppa:ansible/ansible
-sudo apt install ansible -y
+mkdir event_management_api
+cd event_management_api
+```
+
+# Create a virtual environment:
+```
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
+
+# Install required packages:
+```
+pip install fastapi uvicorn sqlalchemy databases[sqlite] python-multipart pydantic
 ```

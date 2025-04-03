@@ -1,4 +1,10 @@
-Create a new directory for your project:
+# Installing Ansible on Ubuntu
+### Ubuntu builds are available in a PPA here.
 
-mkdir event_management_api
-cd event_management_api
+### To configure the PPA on your system and install Ansible run these commands:
+```
+sudo apt update 
+sudo apt install software-properties-common -y
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible -y
+```
